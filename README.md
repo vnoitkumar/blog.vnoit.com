@@ -6,7 +6,13 @@
 </p>
 <h1 align="center">
   Gatsby's blog starter
+  
+  [![Build Status](https://travis-ci.org/vnoitkumar/blog.svg?branch=master)](https://travis-ci.org/vnoitkumar/blog)
+  
 </h1>
+
+<br />
+
 
 Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
