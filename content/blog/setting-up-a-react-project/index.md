@@ -1,7 +1,8 @@
 ---
 title: 'Setting Up Your React Project'
 description: 'Things to make sure before you start a react project'
-date: '2020-01-16T22:40:32.169Z'
+avgReadingTime: '2 min read'
+date: '2020-01-19'
 ---
 
 In the section, we are going to see the necessary things to make sure before you start a react project. We are not going to do any changes in react, instead, we will focus on stuff that needs to be done before that.
@@ -96,7 +97,7 @@ Search for `"Editor: Formate On Save"` and make sure you check the box to format
 If you are in the middle of the project and the codes are not formatted well you can do then as well.
 
 ```bash
-npx prettier --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
+npx prettier --write "src/**/*.{js,jsx,json,css,scss,md}"
 ```
 
 ### Checklist
@@ -104,8 +105,6 @@ npx prettier --write "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}"
 1. ESLint
 2. EditorConfig
 3. Prettier
-
-<!-- Something else needs to be added, we can discuss that in [Twitter](/) -->
 
 ### Resources
 

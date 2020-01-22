@@ -2,11 +2,12 @@ module.exports = {
   siteMetadata: {
     title: `{...js}`,
     author: `Vinoth Kumar`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Personal blog by Vinoth Kumar.`,
     siteUrl: `https://blog.vnoit.com/`,
     profileUrl: `https://vnoit.com/`,
     social: {
-      twitter: `vnoitkumar`
+      twitter: `vnoitkumar`,
+      github: `vnoitkumar`
     }
   },
   plugins: [
@@ -68,9 +69,9 @@ module.exports = {
         name: `{...js}`,
         short_name: `{...js}`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        background_color: `#2d2e2e`,
+        theme_color: `#2d2e2e`,
+        display: `standalone`,
         icon: `content/assets/vnoit.png`
       }
     },

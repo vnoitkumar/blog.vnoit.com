@@ -67,7 +67,7 @@ class Layout extends React.Component {
           <a
             href="https://github.com/vnoitkumar/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noreferrer noopener"
             aria-label="GitHub"
           >
             GitHub
@@ -76,7 +76,7 @@ class Layout extends React.Component {
           <a
             href="https://twitter.com/vnoitkumar"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noreferrer noopener"
             aria-label="Twitter"
           >
             Twitter
@@ -85,7 +85,7 @@ class Layout extends React.Component {
           <a
             href="https://stackoverflow.com/users/5154807/vnoitkumar/"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="nofollow noreferrer noopener"
             aria-label="Stack Overflow"
           >
             Stack Overflow

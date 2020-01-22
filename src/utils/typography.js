@@ -4,7 +4,7 @@ import fairyGatesTheme from 'typography-theme-fairy-gates';
 fairyGatesTheme.overrideThemeStyles = () => {
   return {
     'code, .gatsby-highlight': {
-      fontSize: '0.9em !important'
+      fontSize: '0.95em !important'
     },
     'html, body, blockquote': {
       backgroundColor: '#2d2e2e',

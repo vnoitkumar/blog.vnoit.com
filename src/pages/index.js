@@ -31,7 +31,9 @@ class BlogIndex extends React.Component {
                   </Link>
                 </h3>
 
-                <small style={{ color: '#ddd' }}>{node.frontmatter.date}</small>
+                <small
+                  style={{ color: '#ddd' }}
+                >{`${node.frontmatter.date} . ${node.frontmatter.avgReadingTime}`}</small>
               </header>
               <section>
                 <p
@@ -66,9 +68,10 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMM DD, YYYY")
             title
             description
+            avgReadingTime
           }
         }
       }
