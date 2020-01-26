@@ -7,8 +7,8 @@
 <h1 align="center">
   Gatsby's blog starter
   
-  [![Build Status](https://travis-ci.org/vnoitkumar/blog.svg?branch=master)](https://travis-ci.org/vnoitkumar/blog)
-  
+  [![Build Status](https://travis-ci.org/vnoitkumar/blog.vnoit.com.svg?branch=master)](https://travis-ci.org/vnoitkumar/blog.vnoit.com)
+
 </h1>
 
 <br />
