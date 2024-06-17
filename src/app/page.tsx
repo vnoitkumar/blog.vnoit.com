@@ -3,7 +3,6 @@ import { HeroPost } from "@/app/_components/hero-post";
 import { PostPreview } from "@/app/_components/post-preview";
 import Header from "@/app/_components/header";
 import { Intro } from "@/app/_components/intro";
-import { MoreStories } from "@/app/_components/more-stories";
 import { getAllPosts } from "@/lib/api";
 
 export default function Index() {
