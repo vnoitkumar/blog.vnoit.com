@@ -1,7 +1,5 @@
 import { type Author } from "@/interfaces/author";
 import Link from "next/link";
-import Avatar from "./avatar";
-import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
 
 type Props = {
@@ -11,6 +9,7 @@ type Props = {
   excerpt: string;
   author: Author;
   slug: string;
+  tag: string;
 };
 
 export function PostPreview({
@@ -20,22 +19,38 @@ export function PostPreview({
   excerpt,
   author,
   slug,
+  tag,
 }: Props) {
   return (
-    <div>
-      <div className="mb-5">
-        <CoverImage slug={slug} title={title} src={coverImage} />
+    <div className="flex-col justify-start items-start gap-5 inline-flex hover-up">
+      <Link className="rounded-3xl overflow-hidden max-h-96" href={`/posts/${slug}`}>
+        <img src={coverImage} />
+      </Link>
+      <div className="flex-col justify-start items-start gap-3.5 flex">
+        <div className="justify-start items-center gap-5 inline-flex">
+          <Link href={`/posts/${slug}`} className="px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 flex">
+            <div className="text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none">
+              {tag}
+            </div>
+          </Link>
+          <div className="justify-start items-center gap-2 flex">
+            <a href="author.html">
+              <img
+                className="w-9 h-9 rounded-3xl"
+                src={author.picture}
+              />
+            </a>
+            <div className="text-neutral-700 text-sm font-medium leading-none dark:text-neutral-dark-700">
+              <a href="author.html">{author.name}</a> - <DateFormatter dateString={date} />
+            </div>
+          </div>
+        </div>
+        <h3>
+          <Link href={`/posts/${slug}`} className="text-neutral-950 dark:text-neutral-dark-950 text-2xl font-bold leading-snug item-link">
+            {title}
+          </Link>
+        </h3>
       </div>
-      <h3 className="text-3xl mb-3 leading-snug">
-        <Link href={`/posts/${slug}`} className="hover:underline">
-          {title}
-        </Link>
-      </h3>
-      <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
-      </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-      <Avatar name={author.name} picture={author.picture} />
     </div>
   );
 }
