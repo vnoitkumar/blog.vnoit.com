@@ -9,13 +9,11 @@ export function Footer() {
           <div className="border-t border-gray-200 dark:border-neutral-dark-500 pb-20 " />
           <div className="grid lg:grid-cols-2">
             <div className="mb-8 lg:mb-4 lg:max-w-96">
-              <h1 className="mb-8">
-                <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight">
-                  <Link href="/" className="hover:underline">
+              <h1 className="mb-8 text-4xl font-bold tracking-tight md:tracking-tighter leading-tight">
+                <Link href="/" className="item-link">
                     Blog
                   </Link>
-                  .
-                </h2>
+                .
               </h1>
               <p className="font-medium text-neutral-950 dark:text-neutral-dark-950 mb-8 lg:mb-12 max-w-[350px]">
                 It involves entrepreneurship, management, marketing, finance, and many

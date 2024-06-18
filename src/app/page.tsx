@@ -13,7 +13,7 @@ export default function Index() {
       <div className="header-bg absolute top-0 left-0 right-0 -z-50 w-full h-[1100px] bg-gradient-to-b from-amber-100 to-transparent max-h-[1100px] overflow-hidden"></div>
       <Container>
         <Header />
-        <section className="relative pt-20 py-10 lg:pt-12 lg:pb-24">
+        <section className="relative pt-4 pb-24">
           <h3 className="text-center mb-16 font-bold text-4xl md:text-6xl lg:text-7xl leading-tight ">
             <span className="font-light">See what we've</span>
             <br /> written lately

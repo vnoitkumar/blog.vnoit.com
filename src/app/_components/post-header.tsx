@@ -63,7 +63,7 @@ export function PostHeader({ title, excerpt, date, author }: Props) {
             <h1 className="text-4xl lg:text-6xl font-bold text-neutral-800 dark:text-neutral-dark-800 max-w-5xl leading-snug">
               {title}
             </h1>
-            <p className="text-base md:text-lg font-medium text-neutral-800 dark:text-neutral-dark-800 max-w-3xl">
+            <p className="sm:block hidden text-base md:text-lg font-medium text-neutral-800 dark:text-neutral-dark-800 max-w-3xl">
               {excerpt}
             </p>
             <div className="justify-center items-center gap-4 flex flex-col md:flex-row">
