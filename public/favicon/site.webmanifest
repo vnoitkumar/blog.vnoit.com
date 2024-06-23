@@ -1,6 +1,6 @@
 {
-  "name": "Next.js",
-  "short_name": "Next.js",
+  "name": "blog.vnoit.com",
+  "short_name": "blog.vnoit.com",
   "icons": [
     {
       "src": "/favicons/android-chrome-192x192.png",

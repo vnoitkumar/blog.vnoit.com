@@ -12,8 +12,8 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `blog.vnoit.com`,
+  description: ``,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },

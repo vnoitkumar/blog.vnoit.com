@@ -9,6 +9,13 @@
   @apply my-6 text-neutral-600;
 }
 
+.markdown li {
+  @apply list-disc list-inside mb-2
+}
+
+.markdown a {
+  @apply underline-offset-2 decoration-1 decoration-solid underline
+}
 .markdown h2 {
   @apply text-3xl mt-12 mb-4 leading-snug font-semibold text-neutral-700;
 }
