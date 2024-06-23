@@ -4,6 +4,7 @@ import CoverImage from "./cover-image";
 import DateFormatter from "./date-formatter";
 import { PostTitle } from "@/app/_components/post-title";
 import { type Author } from "@/interfaces/author";
+import { trimTitle } from "@/utils/utils"
 
 type Props = {
   title: string;
@@ -11,11 +12,6 @@ type Props = {
   date: string;
   author: Author;
 };
-
-function trimTitle(title: string) {
-  if (title.length > 50) title = `${title.substring(0, 50)}..`;
-  return title;
-}
 
 export function PostHeader({ title, excerpt, date, author }: Props) {
   return (
