@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from "react";
+import React from 'react';
 import DateFormatter from './date-formatter';
 import { type Author } from '@/interfaces/author';
 import { trimTitle } from '@/utils/utils';

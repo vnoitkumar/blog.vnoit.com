@@ -1,6 +1,6 @@
 import cn from 'classnames';
 import Link from 'next/link';
-import React from "react";
+import React from 'react';
 import Image from 'next/image';
 
 type Props = {
