@@ -60,9 +60,9 @@ export function Footer() {
             </div>
             <div className='grid grid-cols- lg:grid-cols-3 md:grid-cols-3'>
               <div className='mb-4'>
-                <h6 className='text-base font-bold text-neutral-700 dark:text-neutral-dark-700 mb-2'>
+                <p className='text-base font-bold text-neutral-700 dark:text-neutral-dark-700 mb-2'>
                   Category
-                </h6>
+                </p>
                 <ul>
                   <li className='transition-all ease-in-out duration-300 py-2'>
                     <a
@@ -99,9 +99,9 @@ export function Footer() {
                 </ul>
               </div>
               <div className='mb-4'>
-                <h6 className='text-base font-bold text-neutral-700 dark:text-neutral-dark-700 mb-2'>
+                <p className='text-base font-bold text-neutral-700 dark:text-neutral-dark-700 mb-2'>
                   Pages
-                </h6>
+                </p>
                 <ul>
                   <li className='transition-all ease-in-out duration-300 py-2'>
                     <a
@@ -138,9 +138,9 @@ export function Footer() {
                 </ul>
               </div>
               <div className='mb-4'>
-                <h6 className='text-base font-bold text-neutral-700 dark:text-neutral-dark-700 mb-2'>
+                <p className='text-base font-bold text-neutral-700 dark:text-neutral-dark-700 mb-2'>
                   Account
-                </h6>
+                </p>
                 <ul>
                   <li className='transition-all ease-in-out duration-300 py-2'>
                     <a
