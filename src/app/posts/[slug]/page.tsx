@@ -1,13 +1,13 @@
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
-import { CMS_NAME } from "@/lib/constants";
-import markdownToHtml from "@/lib/markdownToHtml";
-import Alert from "@/app/_components/alert";
-import Container from "@/app/_components/container";
-import Header from "@/app/_components/header";
-import { PostBody } from "@/app/_components/post-body";
-import { PostHeader } from "@/app/_components/post-header";
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { getAllPosts, getPostBySlug } from '@/lib/api';
+import { CMS_NAME } from '@/lib/constants';
+import React from 'react';
+import markdownToHtml from '@/lib/markdownToHtml';
+import Container from '@/app/_components/container';
+import Header from '@/app/_components/header';
+import { PostBody } from '@/app/_components/post-body';
+import { PostHeader } from '@/app/_components/post-header';
 
 export default async function Post({ params }: Params) {
   const post = getPostBySlug(params.slug);
@@ -16,14 +16,14 @@ export default async function Post({ params }: Params) {
     return notFound();
   }
 
-  const content = await markdownToHtml(post.content || "");
+  const content = await markdownToHtml(post.content || '');
 
   return (
     <main>
-      <div className="header-bg absolute top-0 left-0 right-0 -z-50 w-full h-[1100px] bg-gradient-to-b from-amber-100 to-transparent max-h-[1100px] overflow-hidden"></div>
+      <div className='header-bg absolute top-0 left-0 right-0 -z-50 w-full h-[1100px] bg-gradient-to-b from-amber-100 to-transparent max-h-[1100px] overflow-hidden'></div>
       <Container>
         <Header />
-        <article className="mb-32">
+        <article className='mb-32'>
           <PostHeader
             title={post.title}
             date={post.date}
