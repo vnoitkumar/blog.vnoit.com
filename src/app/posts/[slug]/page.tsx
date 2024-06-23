@@ -30,7 +30,7 @@ export default async function Post({ params }: Params) {
             author={post.author}
             excerpt={post.excerpt}
           />
-          <PostBody content={content} coverImage={post.coverImage} />
+          <PostBody content={content} coverImage={post.coverImage} title={post.title} />
         </article>
       </Container>
     </main>

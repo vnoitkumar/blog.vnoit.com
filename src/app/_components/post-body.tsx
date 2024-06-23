@@ -5,9 +5,10 @@ import React from 'react';
 type Props = {
   content: string;
   coverImage: string;
+  title: string;
 };
 
-export function PostBody({ content, coverImage }: Props) {
+export function PostBody({ content, coverImage, title }: Props) {
   return (
     <>
       <section className='relative py-6'>
@@ -18,7 +19,7 @@ export function PostBody({ content, coverImage }: Props) {
               src={coverImage}
               height={500}
               width={1000}
-              alt=''
+              alt={title}
             />
             <div
               className={markdownStyles['markdown']}

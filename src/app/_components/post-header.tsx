@@ -3,6 +3,7 @@ import React from 'react';
 import DateFormatter from './date-formatter';
 import { type Author } from '@/interfaces/author';
 import { trimTitle } from '@/utils/utils';
+import Link from 'next/link';
 
 type Props = {
   title: string;
@@ -18,36 +19,17 @@ export function PostHeader({ title, excerpt, date, author }: Props) {
         <div className='container px-4'>
           <div className='flex w-full justify-center item-center md:mb-6 mt-10'>
             <div className='hidden md:flex gap-2.5 justify-start items-center h-12 px-7 py-3.5 bg-amber-50 dark:bg-amber-50 rounded-3xl border border-neutral-200 dark:border-neutral-200'>
-              <a
+              <Link
                 className='text-neutral-700 dark:text-neutral-dark-700 text-base font-medium  leading-normal'
                 href='/'
               >
                 Home
-              </a>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width={8}
-                height={12}
-                viewBox='0 0 8 12'
-                className='fill-neutral-700 dark:fill-neutral-dark-700'
-              >
-                <path d='M1.52344 11.9961C1.24219 11.9961 0.992188 11.9023 0.804688 11.7148C0.398438 11.3398 0.398438 10.6836 0.804688 10.3086L5.08594 5.99609L0.804688 1.71484C0.398438 1.33984 0.398438 0.683594 0.804688 0.308594C1.17969 -0.0976562 1.83594 -0.0976562 2.21094 0.308594L7.21094 5.30859C7.61719 5.68359 7.61719 6.33984 7.21094 6.71484L2.21094 11.7148C2.02344 11.9023 1.77344 11.9961 1.52344 11.9961Z' />
-              </svg>
-              <a
-                className='text-neutral-700 dark:text-neutral-dark-700 text-base font-medium leading-normal'
-                href='/category'
-              >
+              </Link>
+              <Arrow />
+              <span className='text-neutral-700 dark:text-neutral-dark-700 text-base font-medium leading-normal'>
                 Posts
-              </a>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width={8}
-                height={12}
-                viewBox='0 0 8 12'
-                className='fill-neutral-700 dark:fill-neutral-dark-700'
-              >
-                <path d='M1.52344 11.9961C1.24219 11.9961 0.992188 11.9023 0.804688 11.7148C0.398438 11.3398 0.398438 10.6836 0.804688 10.3086L5.08594 5.99609L0.804688 1.71484C0.398438 1.33984 0.398438 0.683594 0.804688 0.308594C1.17969 -0.0976562 1.83594 -0.0976562 2.21094 0.308594L7.21094 5.30859C7.61719 5.68359 7.61719 6.33984 7.21094 6.71484L2.21094 11.7148C2.02344 11.9023 1.77344 11.9961 1.52344 11.9961Z' />
-              </svg>
+              </span>
+              <Arrow />
               <span className='text-neutral-900 dark:text-neutral-dark-950 text-base font-bold leading-snug'>
                 {trimTitle(title)}
               </span>
@@ -81,4 +63,15 @@ export function PostHeader({ title, excerpt, date, author }: Props) {
       </section>
     </>
   );
+
+  function Arrow() {
+    return <svg
+      width={8}
+      height={12}
+      viewBox='0 0 8 12'
+      className='fill-neutral-700 dark:fill-neutral-dark-700'
+    >
+      <path d='M1.52344 11.9961C1.24219 11.9961 0.992188 11.9023 0.804688 11.7148C0.398438 11.3398 0.398438 10.6836 0.804688 10.3086L5.08594 5.99609L0.804688 1.71484C0.398438 1.33984 0.398438 0.683594 0.804688 0.308594C1.17969 -0.0976562 1.83594 -0.0976562 2.21094 0.308594L7.21094 5.30859C7.61719 5.68359 7.61719 6.33984 7.21094 6.71484L2.21094 11.7148C2.02344 11.9023 1.77344 11.9961 1.52344 11.9961Z' />
+    </svg>;
+  }
 }

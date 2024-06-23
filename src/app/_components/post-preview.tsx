@@ -34,7 +34,7 @@ export function PostPreview({
       </Link>
       <div className='flex-col justify-start items-start gap-3.5 flex'>
         <div className='justify-start items-center gap-5 inline-flex'>
-          <Link
+          {/* <Link
             href={`/posts/${slug}`}
             aria-label={`Read more about ${tag}`}
             className='px-3 py-[8px] bg-neutral-200 dark:bg-neutral-dark-200 rounded-3xl border border-neutral-200 dark:border-neutral-dark-300 justify-center items-center gap-2.5 sm:flex hidden'
@@ -42,7 +42,7 @@ export function PostPreview({
             <div className='text-neutral-900 dark:text-neutral-dark-950 text-sm font-medium leading-none'>
               {tag}
             </div>
-          </Link>
+          </Link> */}
           <div className='justify-start items-center gap-2 flex'>
             <Image
               className='rounded-3xl'
