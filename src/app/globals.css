@@ -17,7 +17,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.hover-up {
+/* .hover-up {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
@@ -26,4 +26,4 @@
 .hover-up:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y));
-}
+} */

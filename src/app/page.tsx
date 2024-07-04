@@ -13,10 +13,6 @@ export default function Index() {
       <Container>
         <Header />
         <section className='relative pt-4 pb-24'>
-          <h3 className='text-center mb-16 font-bold text-4xl md:text-6xl lg:text-7xl leading-tight '>
-            <span className='font-light'>See what we&lsquo;ve</span>
-            <br /> written lately
-          </h3>
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-[30px] gap-y-[65px]'>
             {allPosts.map((post) => (
               <PostPreview

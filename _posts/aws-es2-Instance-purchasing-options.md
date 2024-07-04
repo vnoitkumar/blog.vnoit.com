@@ -3,7 +3,7 @@ title: "AWS - EC2 Instance purchasing options"
 excerpt: "Find the most affordable AWS EC2 instance options for your cloud strategy by comparing spot, reserved, on-demand, and dedicated host options."
 coverImage: "/assets/blog/aws-es2-Instance-purchasing-options/cover.jpg"
 date: "2024-06-23"
-tag: "Travel"
+tag: "Cloud"
 author:
   name: Vinoth
   picture: "/assets/blog/authors/vinoth.jpg"
